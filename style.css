@@ -1,7 +1,13 @@
-h1, h2, h3, h4, p, li {
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
     font-family: sans-serif;
     color: #444;
+    border-top: 10px solid #155eb8;
 }
+
 h1, h2, h3 {
     color: #155eb8;
 }
@@ -15,12 +21,15 @@ h1 {
 
 h2 {
   font-size: 30px;
+  margin-bottom: 30px;
 
 }
 
 h3 {
 
   font-size: 20px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 h4 {
   font-size: 20px;
@@ -32,15 +41,33 @@ p {
   font-size: 20px;
 
   line-height: 1.5;
+  margin-bottom: 15px;
+}
+ul, ol {
+    margin-left: 50px;
+    margin-bottom: 20px;
 }
 
 li {
 
     font-size: 20px;
+    margin-bottom: 10px;
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+article {
+    margin-bottom: 60px;
 }
 
 #footer {
     font-size: 16px;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
 }
 
 .related-author {
@@ -53,11 +80,20 @@ li {
 
 .main-header {
     background-color: #f7f7f7;
+    padding: 24px 40px;
+    margin-bottom: 60px;
+    height: 80px;
 }
+.post-header {
+    margin-bottom: 40px;
+}
+
 aside {
     background-color: #f7f7f7;
     border-top: 5px solid #155eb8;
     border-bottom: 5px solid #155eb8;
+    padding: 50px 0;
+    width: 500px;
 }
 a:link {
     color: #155eb8;
@@ -74,4 +110,9 @@ a:hover{
 A:active{
     color: orange;
     background-color: #155eb8;
+}
+
+.post-image {
+    width: 100%;
+    height: auto;
 }
